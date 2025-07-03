@@ -22,3 +22,35 @@ button {
   border: none;
   cursor: pointer;
 }
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+  
+  #demon {
+    font-size: 80px !important;
+    margin: 5px 0 !important;
+  }
+  
+  .stats {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 20px !important;
+  }
+}
