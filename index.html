@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Вырасти беса!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Добавил базовые стили для наглядности */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    #demon {
+      font-size: 100px;
+      margin: 20px;
+      transition: transform 0.3s; /* Для будущих анимаций */
+    }
+    .stats {
+      margin: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="game">
+    <h1>Вырасти беса! 🎮</h1>
+    <div id="demon">👹</div>
+    
+    <div class="stats">
+      <div>Голод: <span id="hunger">50</span>/100</div>
+      <div>Настроение: <span id="mood">50</span>/100</div>
+    </div>
+    
+    <div class="buttons">
+      <button onclick="feed()">🍗 Покормить</button>
+      <button onclick="play()">🎮 Поиграть</button>
+      <button onclick="clean()">🧹 Убрать</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
